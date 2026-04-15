@@ -5,98 +5,116 @@
     <title>자기 소개 웹 페이지 작성</title>
 </head>
 <body>
+
+<header>
     <div id="header">
-<h3>About me</h3>
-<hr>
-<p>
-    안녕하세요? 제 이름은 신서진입니다. 올해 대학교를 입학한 새내기입니다. 
-    다양한 관심분야와 취미 활동을 하고 있습니다. 즐거운 하루들 되세요 ~
-</p>
-</div>
+    <h3>About me</h3>
+    <hr>
+    <p>
+        안녕하세요? 제 이름은 신서진입니다. 올해 대학교를 입학한 새내기입니다. 
+        다양한 관심분야와 취미 활동을 하고 있습니다. 즐거운 하루들 되세요 ~
+    </p>
+    </div>
+</header>
 
-<div id="navigation">
+<nav>
+    <div id="navigation">
     <h3>목차</h3>
-    <ul>
-        <li><a href="#contents">관심분야</a></li>
-        <li><a href="#app">취미활동</a></li>
-        <li><a href="#pratice">강의 시간표</a></li>
-    </ul>
-</div>
+        <ul>
+            <li><a href="#contents">관심분야</a></li>
+            <li><a href="#app">취미활동</a></li>
+            <li><a href="#pratice">강의 시간표</a></li>
+        </ul>
+    </div>
+</nav>
 
-<div id="contents">
-    <h3>관심 분야</h3>
-    <hr>
-    <ul>
-        <li>
-            게임
+<section>
+    <article id="contents">
+        <div id="contents">
+            <h3>관심 분야</h3>
+            <hr>
             <ul>
-                <li>발로란트</li>
-                <li>에이펙스 레전드</li>
-                <li>림버스 컴퍼니</li>
+                <li>
+                    게임
+                    <ul>
+                        <li>발로란트</li>
+                        <li>에이펙스 레전드</li>
+                        <li>림버스 컴퍼니</li>
+                    </ul>
+                </li>
             </ul>
-        </li>
-    </ul>
-    <ul>
-        <li>
-            음악
             <ul>
-                <li>시작의 아이-박다혜&마크튭</li>
-                <li>별의 조각-윤하</li>
-                <li>피차일반(彼此一般)-음율</li>
+                <li>
+                    음악
+                    <ul>
+                        <li>시작의 아이-박다혜&마크튭</li>
+                        <li>별의 조각-윤하</li>
+                        <li>피차일반(彼此一般)-음율</li>
+                    </ul>
+                </li>
             </ul>
-        </li>
-    </ul>
-    <ul>
-        <li>
-            컴퓨터 프로그래밍
             <ul>
-                <li>Java</li>
-                <li>Python</li>
-                <li>C++</li>
+                <li>
+                    컴퓨터 프로그래밍
+                    <ul>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>C++</li>
+                    </ul>
+                </li>
             </ul>
-        </li>
-    </ul>
-</div>
+        </div>
+    </article>
 
-<div id="app">
-    <h3>취미 활동</h3>
-    <hr>
-    <table border="1">
-        <tfoot>
-            <tr><th>농구</th><th>음악</th><th>게임</th></tr>
-        </tfoot>
-        <tbody>
-            <tr><td><img src="media/basketball.jpg" width height="100"></td>
-            <td><img src="media/music.jpg"width height="100"></td>
-            <td><img src="media/game.jpg"width height="100"></td></tr>
-        </tbody>
-    </table>
-    
-</div>
+    <article id="app">
+        <div id="app">
+            <h3>취미 활동</h3>
+            <hr>
+            <table border="1">
+                <tfoot>
+                    <tr><th>농구</th><th>음악</th><th>게임</th></tr>
+                </tfoot>
+                <tbody>
+                    <tr><td><img src="media/basketball.jpg" width height="100"></td>
+                    <td><img src="media/music.jpg"width height="100"></td>
+                    <td><img src="media/game.jpg"width height="100"></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </article>
 
-<div id="pratice">
-    <h3>강의 시간표(2026년 1학기)</h3>
+    <article id="pratice">
+        <div id="pratice">
+            <h3>강의 시간표(2026년 1학기)</h3>
+            <hr>
+            <table border="1">
+                <thead>
+                        <tr><th>구분</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th></tr>
+                    </thead>
+                    <tfoot>
+                        <tr><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+                    </tfoot>
+                    <tbody>
+                        <tr><td>9</td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td>10</td><td></td><td></td><td>인터넷 컨텐츠</td><td>컴퓨터학개론</td><td></td></tr>
+                        <tr><td>11</td><td></td><td></td><td>인터넷 컨텐츠</td><td>컴퓨터학개론</td><td></td></tr>
+                        <tr><td>12</td><td></td><td></td><td>인터넷 컨텐츠</td><td>컴퓨터학개론</td><td></td></tr>
+                        <tr><td>1</td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td>2</td><td>프로그래밍 언어 실습</td><td></td><td>SW개발문제 해결능력</td><td></td><td>인성채플</td></tr>
+                        <tr><td>3</td><td>프로그래밍 언어 실습</td><td></td><td>SW개발문제 해결능력</td><td></td><td></td></tr>
+                        <tr><td>4</td><td>프로그래밍 언어 실습</td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td>5</td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td>6</td><td></td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td>7</td><td></td><td></td><td></td><td></td><td></td></tr>   
+                    </tbody>
+            </table>
+        </div>
+    </article>
+</section>
+    <footer>
     <hr>
-    <table border="1">
-        <thead>
-                <tr><th>구분</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th></tr>
-            </thead>
-            <tfoot>
-                <tr><th></th><th></th><th></th><th></th><th></th><th></th></tr>
-            </tfoot>
-            <tbody>
-                <tr><td>9</td><td></td><td></td><td></td><td></td><td></td></tr>
-                <tr><td>10</td><td></td><td></td><td>인터넷 컨텐츠</td><td>컴퓨터학개론</td><td></td></tr>
-                <tr><td>11</td><td></td><td></td><td>인터넷 컨텐츠</td><td>컴퓨터학개론</td><td></td></tr>
-                <tr><td>12</td><td></td><td></td><td>인터넷 컨텐츠</td><td>컴퓨터학개론</td><td></td></tr>
-                <tr><td>1</td><td></td><td></td><td></td><td></td><td></td></tr>
-                <tr><td>2</td><td>프로그래밍 언어 실습</td><td></td><td>SW개발문제 해결능력</td><td></td><td>인성채플</td></tr>
-                <tr><td>3</td><td>프로그래밍 언어 실습</td><td></td><td>SW개발문제 해결능력</td><td></td><td></td></tr>
-                <tr><td>4</td><td>프로그래밍 언어 실습</td><td></td><td></td><td></td><td></td></tr>
-                <tr><td>5</td><td></td><td></td><td></td><td></td><td></td></tr>
-                <tr><td>6</td><td></td><td></td><td></td><td></td><td></td></tr>
-                <tr><td>7</td><td></td><td></td><td></td><td></td><td></td></tr>   
-            </tbody>
-    </table>
-</div>
+    <a href="survey3.html">설문조사</a>
+    <br>
+    copyright 2026 by seojinshin
+    </footer>
 </body>
