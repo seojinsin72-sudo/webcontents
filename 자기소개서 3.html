@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>자기 소개 웹 페이지 작성</title>
+
+<style>
+    body {
+        background-color: white;
+        font-family: "맑은 고딕", sans-serif;
+    }
+
+    .container {
+        width: 900px;
+        margin: 20px auto;
+        background-color: aliceblue;
+        border: 1px solid gray;
+        padding: 15px;
+    }
+
+    header {
+        border: 1px solid black;
+        padding: 20px;
+    }
+
+    h1 {
+        color: brown;
+        text-align: center;
+        margin: 0;
+    }
+
+    h2 {
+        color: blue;
+        text-shadow: 2px 2px 5px lightgray;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 1em;
+        line-height: 1.6em;
+        text-indent: 1em;
+    }
+
+    ul {
+        border: 1px dotted gray;
+        padding: 10px 30px;
+    }
+
+    a {
+        text-decoration: none;
+        color: blue;
+    }
+
+    /* 취미활동 이미지 */
+    .hobby-table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    .hobby-table td {
+        border: 1px solid #999;
+        padding: 5px;
+    }
+
+    .hobby-table img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    /* 시간표 */
+    .schedule {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    .schedule th,
+    .schedule td {
+        border: 1px solid #999;
+        padding: 8px;
+    }
+
+    .schedule th {
+        background-color: #f5f5f5;
+    }
+
+    .time {
+        background-color: #fff9d6;
+        font-weight: bold;
+        width: 60px;
+    }
+
+    .class1 {
+        background-color: #ffdede;
+    }
+
+    .class2 {
+        background-color: #ddeeff;
+    }
+
+    footer {
+        background-color: orange;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 20px;
+        font-style: italic;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- 헤더 -->
+    <header>
+        <h1>About me</h1>
+    </header>
+
+    <!-- 자기소개 -->
+    <p>
+        안녕하세요? 제 이름은 신서진입니다. 올해 대학교를 입학한 새내기입니다.
+        다양한 관심분야와 취미활동을 하고 있습니다. 즐거운 하루 되세요~
+    </p>
+
+    <!-- 목차 -->
+    <h2>목차</h2>
+    <ul>
+        <li><a href="#interest">관심분야</a></li>
+        <li><a href="#hobby">취미활동</a></li>
+        <li><a href="#schedule">강의시간표</a></li>
+    </ul>
+
+    <!-- 관심분야 -->
+    <h2 id="interest">관심분야</h2>
+    <ul>
+        <li>게임
+            <ul>
+                <li>발로란트</li>
+                <li>에이펙스 레전드</li>
+                <li>림버스 컴퍼니</li>
+            </ul>
+        </li>
+        <li>음악
+            <ul>
+                <li>시작의 아이 - 박다혜 & 마크툽</li>
+                <li>별의 조각 - 윤하</li>
+                <li>피차일반 - 음율</li>
+            </ul>
+        </li>
+        <li>컴퓨터 프로그래밍
+            <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>C++</li>
+            </ul>
+        </li>
+    </ul>
+
+    <!-- 취미활동 -->
+    <h2 id="hobby">취미활동</h2>
+    <table class="hobby-table">
+        <tr>
+            <td>
+                <img src="media/basketball.jpg" alt="농구">
+                <br>basketball
+            </td>
+            <td>
+                <img src="media/music.jpg" alt="음악">
+                <br>music
+            </td>
+            <td>
+                <img src="media/game.jpg" alt="게임">
+                <br>game
+            </td>
+        </tr>
+    </table>
+
+    <!-- 강의시간표 -->
+    <h2 id="schedule">강의시간표(2026년 1학기)</h2>
+    <table class="schedule">
+        <tr>
+            <th>구분</th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+        </tr>
+
+        <tr>
+            <td class="time">09</td>
+            <td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td class="time">10</td>
+            <td></td><td></td>
+            <td class="class1" rowspan="3">인터넷<br>콘텐츠</td>
+            <td class="class2" rowspan="3">컴퓨터<br>학개론</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="time">11</td>
+            <td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td class="time">12</td>
+            <td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td class="time">13</td>
+            <td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <td class="time">14</td>
+            <td class="class1" rowspan="3">프로그래밍<br>언어실습</td>
+            <td></td>
+            <td class="class2" rowspan="2">SW개발문제<br>해결능력</td>
+            <td></td>
+            <td>인성채플</td>
+        </tr>
+        <tr>
+            <td class="time">15</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="time">16</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="time">17</td>
+            <td></td><td></td><td></td><td></td><td></td>
+        </tr>
+    </table>
+
+    <!-- 푸터 -->
+    <footer>
+        <a href="survey4.html">설문지</a><br>
+        Copyright 2026 by seojinshin
+    </footer>
+
+</div>
+
+</body>
+</html>
